@@ -1,0 +1,401 @@
+/* --- CSS RESET ---------------------------------------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    color-scheme: dark light;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* make these elements responsive */
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+/* --- END CSS RESET ---------------------------------------- */
+
+:root {
+    --primary-color: #FF0000;
+}
+
+/* * {
+    border: 2px solid blue;
+} */
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.section {
+    height: 100vh;
+    padding: 0 20px 0 50px;
+}
+
+.section-title {
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.section-text {
+    margin-top: 1rem;
+}
+
+.line {
+    background-color: #ffffff;
+    height: 100%;
+    width: 3px;
+    left: 40px;
+    position: absolute;
+    z-index: 1;
+}
+
+.dot {
+    background-color: var(--primary-color);
+    height: 20px;
+    width: 5px;
+    left: 39px;
+    top: 0;
+    position: absolute;
+
+    animation: dot 3s ease-out infinite;
+    z-index: 1;
+}
+
+p sup {
+    vertical-align: top;
+    font-size: 0.7rem;
+}
+
+/* --- INTRO ---------------------------------------- */
+.intro {
+    position: relative;
+}
+
+.intro-content h1 {
+    font-size: 2.4rem;
+}
+
+.intro-content .hr {
+    background-color: var(--primary-color);
+    margin: 10px 0;
+    height: 2px;
+    width: 33%;
+}
+
+.singularity {
+    background-color: var(--primary-color);
+    border:1px solid var(--primary-color);
+    border-radius: 1008px;
+    height: 7px;
+    width: 7px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+/* --- PLANCK EPOCH ---------------------------------------- */
+.planck {
+    overflow: hidden;
+    position: relative;
+}
+
+.particle-frame {
+    height: 400px;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.particle-frame div {
+    background-color:var(--primary-color);
+    border-radius: 1008px;
+    height: 7px;
+    width: 7px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: bigbang 2s ease-out infinite;
+}
+
+.particle1 {
+    top: 10%;
+    left: 50%;
+}
+.particle2 {
+    top: 20%;
+    left: 80%;
+}
+.particle3 {
+    top: 50%;
+    left: 90%;  
+}
+.particle4 {
+    top: 80%;
+    left: 80%;
+}
+.particle5 {
+    top: 90%;
+    left: 50%;
+}
+.particle6 {
+    top: 80%;
+    left: 20%;
+}
+.particle7 {
+    top: 50%;
+    left: 10%;
+}
+.particle8 {
+    top: 20%;
+    left: 20%;
+}
+.particle9 {
+    top: 30%;
+    left: 41%;
+}
+.particle10 {
+    top: 30%;
+    left: 59%;
+}
+.particle11 {
+    top: 42.5%;
+    left: 72.5%;
+}
+.particle12 {
+    top: 58.5%;
+    left: 72.5%;
+}
+.particle13 {
+    top: 70%;
+    left: 59%;
+}
+.particle14 {
+    top: 70%;
+    left: 41%;
+}
+.particle15 {
+    top: 58.5%;
+    left: 28.5%;
+}
+.particle16 {
+    top: 42.5%;
+    left: 28.5%;
+}
+
+/* --- GUT EPOCH ---------------------------------------- */
+.gut {
+    isolation: isolate;
+    position: relative;
+  
+}
+
+.gut-frame {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.gravity-blob {
+    border: 2px solid var(--primary-color);
+    border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%; 
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    animation: gravity 2s ease-in infinite;
+
+    
+}
+
+.gut-blob {
+    background-color: var(--primary-color);
+    height: 150px;
+    width: 150px;
+    border-radius: 38% 62% 49% 51% / 59% 43% 57% 41%; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    animation: gutblob 4s linear alternate infinite;
+
+    display: flex;
+    justify-content: center;
+}
+
+.gut-blob p, .gravity-blob p {
+    align-content: center;
+    align-self: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+
+/* --- ELECTROWEAK EPOCH ---------------------------------------- */
+.electroweak {
+    isolation: isolate;
+    position: relative;
+
+}
+
+.electroweak-frame div {
+    background-color: var(--primary-color);
+    border-radius: 1008px;
+    left:50%;
+    top: 50%;
+    position: absolute;
+
+    animation: inflation 5s ease-out infinite;
+    z-index: -1;
+}
+
+.ew-ring1 {
+    height: 20px;
+    width: 20px;
+}
+
+.ew-ring2 {
+    height: 40px;
+    width: 40px;
+    opacity: 0.8;
+}
+
+.ew-ring3 {
+    height: 60px;
+    width: 60px;
+    opacity: 0.6;
+}
+
+.ew-ring4 {
+    height: 80px;
+    width: 80px;
+    opacity: 0.4;
+}
+
+.ew-ring5 {
+    height: 100px;
+    width: 100px;
+    opacity: 0.2;
+}
+
+
+
+/* --- ANIMATIONS ---------------------------------------- */
+@keyframes dot {	
+    100% {
+		top: 100%;
+	}
+}
+
+
+/* BIG BANG */
+
+@keyframes bigbang {
+    from {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+    to {
+        opacity: 0.2;
+    }
+}
+
+
+/* GUT */
+@keyframes gutblob {
+    10% {
+        border-radius: 38% 62% 49% 51% / 45% 55% 45% 55%;
+    }
+    20% {
+        border-radius:53% 47% 65% 35% / 45% 55% 45% 55% ;
+    }
+    30% {
+        border-radius: 53% 47% 65% 35% / 54% 37% 63% 46%;
+    }
+    40% {
+        border-radius: 45% 55% 47% 53% / 54% 37% 63% 46%;
+    }
+    50% {
+        border-radius: 45% 55% 47% 53% / 66% 25% 75% 34%;
+    }
+    60% {
+        border-radius: 35% 65% 59% 41% / 66% 25% 75% 34%;
+    }
+    70% {
+        border-radius: 35% 65% 59% 41% / 53% 39% 61% 47%; 
+    }
+    80% {
+        border-radius: 45% 55% 37% 63% / 53% 39% 61% 47%;
+    }
+    90% {
+        border-radius: 45% 55% 37% 63% / 63% 53% 47% 37% ;
+    }
+    100% {
+        border-radius: 38% 62% 49% 51% / 59% 43% 57% 41% ;
+    }
+}
+
+@keyframes gravity {
+    0% {
+
+    }
+    45% {
+        top: 150%; 
+        border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%; 
+    }
+    50% {
+        border-radius: 50% 50% 50% 50% / 80% 80% 20% 20%;
+    }
+    100% {
+        border-radius: 1008px;
+        top: 150%;
+    }
+}
+
+
+/* ELECTROWEAK */
+@keyframes inflation {
+	0% {
+		transform: translate(-50%,-50%) scale(0.3) ;
+	}
+
+	100% {
+        transform: translate(-50%,-50%) scale(4) ;
+	}
+}
+
