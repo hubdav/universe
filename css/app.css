@@ -77,9 +77,10 @@ main {
     left: 39px;
     top: 0;
     position: absolute;
-
-    animation: dot 3s ease-out infinite;
     z-index: 1;
+    transform: translate(0,0);
+
+    animation: dot 5s ease-out infinite;
 }
 
 p sup {
@@ -137,73 +138,59 @@ p sup {
     height: 7px;
     width: 7px;
     position: absolute;
-    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
     animation: bigbang 2s ease-out infinite;
 }
 
 .particle1 {
-    top: 10%;
-    left: 50%;
+    transform: translate(0, -150px);
 }
 .particle2 {
-    top: 20%;
-    left: 80%;
+    transform: translate(110px, -110px);
 }
 .particle3 {
-    top: 50%;
-    left: 90%;  
+    transform: translate(150px, 0);
 }
 .particle4 {
-    top: 80%;
-    left: 80%;
+    transform: translate(110px, 110px);
 }
 .particle5 {
-    top: 90%;
-    left: 50%;
+    transform: translate(0, 150px);
 }
 .particle6 {
-    top: 80%;
-    left: 20%;
+    transform: translate(-110px, 110px);
 }
 .particle7 {
-    top: 50%;
-    left: 10%;
+    transform: translate(-150px, 0);
 }
 .particle8 {
-    top: 20%;
-    left: 20%;
+    transform: translate(-110px, -110px);
 }
 .particle9 {
-    top: 30%;
-    left: 41%;
+    transform: translate(30px, -70px);
 }
 .particle10 {
-    top: 30%;
-    left: 59%;
+    transform: translate(70px, -30px);
 }
 .particle11 {
-    top: 42.5%;
-    left: 72.5%;
+    transform: translate(70px, 30px);
 }
 .particle12 {
-    top: 58.5%;
-    left: 72.5%;
+    transform: translate(30px, 70px);
 }
 .particle13 {
-    top: 70%;
-    left: 59%;
+    transform: translate(-30px, 70px);
 }
 .particle14 {
-    top: 70%;
-    left: 41%;
+    transform: translate(-70px, 30px);
 }
 .particle15 {
-    top: 58.5%;
-    left: 28.5%;
+    transform: translate(-70px, -30px);
 }
 .particle16 {
-    top: 42.5%;
-    left: 28.5%;
+    transform: translate(-30px, -70px);
 }
 
 /* --- GUT EPOCH ---------------------------------------- */
@@ -317,7 +304,7 @@ p sup {
 /* --- ANIMATIONS ---------------------------------------- */
 @keyframes dot {	
     100% {
-		top: 100%;
+		transform: translate(0,500vh);
 	}
 }
 
@@ -326,8 +313,7 @@ p sup {
 
 @keyframes bigbang {
     from {
-        top: 50%;
-        left: 50%;
+        transform: translate(-50%,-50%);
         opacity: 1;
     }
     to {
@@ -375,7 +361,7 @@ p sup {
 
     }
     45% {
-        top: 150%; 
+        transform: translate(-50%, 250%);;
         border-radius: 50% 50% 50% 50% / 35% 35% 65% 65%; 
     }
     50% {
@@ -383,7 +369,7 @@ p sup {
     }
     100% {
         border-radius: 1008px;
-        top: 150%;
+        transform: translate(-50%, 250%);
     }
 }
 
